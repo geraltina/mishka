@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мишка. Каталог товаров</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="page-header__wrapper  wrapper  wrapper--width">
+          <a href="index.html" class="page-header__link">
+            <img class="page-header__logo  page-header__logo--closed" src="img/logo-mobile.svg" alt="Mishka">
+          </a>
+          <button class="page-header__menu-button  menu-button  menu-button--closed  menu-button--no-js">Закрыть</button>
+        </div>
+        <nav class="page-header__main-nav  main-nav  main-nav--closed  main-nav--no-js">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link">Каталог товаров</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html" class="main-nav__link">Вязание на заказ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item  main-nav__item--search">
+                <a href="#" class="main-nav__link">Поиск по сайту</a>
+              </li>
+              <li class="main-nav__item  main-nav__item--cart">
+                <a href="#" class="main-nav__link">Корзина: пока пуста</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="promo">
+        <div class="promo__wrapper  promo__wrapper--nobg  wrapper  wrapper--width">
+          <h1 class="promo__header">
+            Каталог товаров
+          </h1>
+        </div>
+      </section>
+      <section class="products">
+        <h2 class="visually-hidden">Товары</h2>
+        <div class="products__wrapper  wrapper  wrapper--width">
+          <article class="products__item  product">
+            <img src="img/photo-hare-mobile@1x.jpg" alt="Игрушка синий заяц" class="product__img">
+            <div class="product__desription">
+              <h2 class="product__header  header  header--small">Зайчик-попрыгайчик</h2>
+              <p class="product__parameter">Рост 30 см, вес 200 г</p>
+            </div>
+            <div class="product__buying">
+              <span class="product__price">1200 руб.</span>
+              <span class="product__cart">Положить товар в корзину</span>
+            </div>
+          </article>
+          <article class="products__item  product">
+            <img src="img/photo-bowl-mobile@1x.jpg" alt="Розово-белая корзинка" class="product__img">
+            <div class="product__desription">
+              <h2 class="product__header  header  header--small">Корзинка для белья</h2>
+              <p class="product__parameter">Диаметр 15 см, высота 10 см</p>
+            </div>
+            <div class="product__buying">
+              <span class="product__price">690 руб.</span>
+              <span class="product__cart">Положить товар в корзину</span>
+            </div>
+          </article>
+          <article class="products__item  product">
+            <img src="img/photo-toys-mobile@1x.jpg" alt="Зелёно-белая корзинка" class="product__img">
+            <div class="product__desription">
+              <h2 class="product__header  header  header--small">Большая корзинка для игрушек</h2>
+              <p class="product__parameter">Диаметр 30 см, высота 30 см</p>
+            </div>
+            <div class="product__buying">
+              <span class="product__price">1500 руб.</span>
+              <span class="product__cart">Положить товар в корзину</span>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="production-process">
+        <div class="production-process__wrapper  wrapper  wrapper--width">
+          <h3 class="production-process__header  header  header--small">Процесс производства</h3>
+          <div class="production-process__video">
+            <img src="img/video-mobile@1x.jpg" alt="Видео процесса производства" class="production-process__video-img">
+            <button class="production-process__play-btn" type="button" name="button">Запуск видео</button>
+          </div>
+          <p class="production-process__text">
+            По просьбам наших любимых фолловеров
+            мы сняли для вас подробное видео о том,
+            как появляются наши товары.
+          </p>
+          <button class="production-process__button  button" type="button" name="button">Сделать заказ</button>
+        </div>
+      </section>
+    </main>
+    <footer class="page__footer">
+      <div class="page-footer__wrapper  wrapper  wrapper--width">
+        <ul class="social-icons">
+          <li class="social-icons__item">
+            <a href="#" class="social-icons__link  social-icons__link--insta">Instagram</a>
+          </li>
+          <li class="social-icons__item">
+            <a href="#" class="social-icons__link  social-icons__link--fb">Facebook</a>
+          </li>
+          <li class="social-icons__item">
+            <a href="#" class="social-icons__link  social-icons__link--tw">Twitter</a>
+          </li>
+        </ul>
+        <div class="copyright">
+          <p class="copyright__text">Разработано</p>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link"><img src="img/htmlacademy.svg" alt="HTML Academy" class="copyright__image" width="27" height="34"></a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
