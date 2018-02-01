@@ -1,6 +1,18 @@
 .copyright {
+  position: relative;
   display: flex;
   justify-content: center;
+  padding-top: 22px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 1px;
+    background-color: #e5e5e5;
+  }
 }
 
 .copyright__text {
