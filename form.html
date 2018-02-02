@@ -59,14 +59,14 @@
           <fieldset class="form__fieldset  form__fieldset--type">
             <div class="form__wrapper  wrapper  wrapper--width  wrapper--flex">
               <h2 class="form__header  header  header--blue">Тип</h2>
-              <div class="form__wrapper  wrapper">
-                <div class="form__wrapper wrapper wrapper--flex">
-                  <input type="radio" class="form__input  form__input--radio" id="accessory" name="type">
-                  <label for="accessory" class="form__label">Аксессуар для интерьера</label>
+              <div class="form__wrapper  wrapper  wrapper--flex">
+                <div class="form__wrapper  form__wrapper--radio  wrapper">
+                  <input type="radio" class="form__input  form__input--radio" id="accessory" name="type" checked>
+                  <label for="accessory" class="form__label  form__label--radio">Аксессуар для интерьера</label>
                 </div>
-                <div class="form__wrapper wrapper wrapper--flex">
+                <div class="form__wrapper  form__wrapper--radio  wrapper">
                   <input type="radio" class="form__input  form__input--radio" id="toy" name="type">
-                  <label for="toy" class="form__label">Детская игрушка</label>
+                  <label for="toy" class="form__label  form__label--radio">Детская игрушка</label>
                 </div>
               </div>
             </div>
@@ -74,24 +74,36 @@
           <fieldset class="form__fieldset  form__fieldset--color">
             <div class="form__wrapper  wrapper  wrapper--width  wrapper--flex">
               <h2 class="form__header  header  header--blue">Цвет</h2>
-              <div class="form__wrapper  wrapper  wrapper--flex-checkbox">
-                <div class="wrapper wrapper--flex">
-                  <input type="checkbox" class="form__input form__input--check" name="white" id="white" checked>
-                  <label for="white" class="form__label">Белый</label>
-                  <input type="checkbox" class="form__input form__input--check" name="grey" id="grey" checked>
-                  <label for="grey" class="form__label">Серый</label>
+              <div class="form__wrapper  wrapper">
+                <div class="form__wrapper  form__wrapper--checks  wrapper wrapper--flex">
+                  <div class="form__wrapper form__wrapper--check">
+                    <input type="checkbox" class="form__input form__input--check" name="white" id="white" checked>
+                    <label for="white" class="form__label">Белый</label>
+                  </div>
+                  <div class="form__wrapper form__wrapper--check">
+                    <input type="checkbox" class="form__input form__input--check" name="grey" id="grey" checked>
+                    <label for="grey" class="form__label">Серый</label>
+                  </div>
                 </div>
-                <div class="wrapper wrapper--flex">
-                  <input type="checkbox" class="form__input form__input--check" name="tiffany" id="tiffany">
-                  <label for="tiffany" class="form__label">«Тиффани»</label>
-                  <input type="checkbox" class="form__input form__input--check" name="black" id="black">
-                  <label for="black" class="form__label">Черный</label>
+                <div class="form__wrapper  form__wrapper--checks  wrapper wrapper--flex">
+                  <div class="form__wrapper form__wrapper--check">
+                    <input type="checkbox" class="form__input form__input--check" name="white" id="white" checked>
+                    <label for="white" class="form__label">«Тиффани»</label>
+                  </div>
+                  <div class="form__wrapper form__wrapper--check">
+                    <input type="checkbox" class="form__input form__input--check" name="grey" id="grey" checked>
+                    <label for="grey" class="form__label">Черный</label>
+                  </div>
                 </div>
-                <div class="wrapper wrapper--flex">
-                  <input type="checkbox" class="form__input form__input--check" name="pink" id="pink">
-                  <label for="pink" class="form__label">Розовый</label>
-                  <input type="checkbox" class="form__input form__input--check" name="orange" id="orange">
-                  <label for="orange" class="form__label">Оранжевый</label>
+                <div class="form__wrapper  form__wrapper--checks  wrapper wrapper--flex">
+                  <div class="form__wrapper form__wrapper--check">
+                    <input type="checkbox" class="form__input form__input--check" name="white" id="white" checked>
+                    <label for="white" class="form__label">Розовый</label>
+                  </div>
+                  <div class="form__wrapper form__wrapper--check">
+                    <input type="checkbox" class="form__input form__input--check" name="grey" id="grey" checked>
+                    <label for="grey" class="form__label">Оранжевый</label>
+                  </div>
                 </div>
               </div>
             </div>
@@ -100,17 +112,17 @@
             <div class="form__wrapper  wrapper  wrapper--width  wrapper--flex">
               <h2 class="form__header  header  header--blue">ФИО</h2>
               <div class="form__wrapper  wrapper">
-                <div class="form__wrapper form__wrapper--flex">
+                <div class="form__wrapper  wrapper  wrapper--flex">
                   <label for="name" class="form__label">Имя:</label>
-                  <input type="text" class="form__input  form__input--text" id="name">
+                  <input type="text" class="form__input  form__input--text" id="name" placeholder="Введите ваше имя*">
                 </div>
-                <div class="form__wrapper form__wrapper--flex">
+                <div class="form__wrapper  wrapper  wrapper--flex">
                   <label for="surname" class="form__label">Фамилия:</label>
-                  <input type="text" class="form__input  form__input--text" id="surname">
+                  <input type="text" class="form__input  form__input--text" id="surname" placeholder="Укажите фамилию*">
                 </div>
-                <div class="form__wrapper form__wrapper--flex">
+                <div class="form__wrapper  wrapper  wrapper--flex">
                   <label for="patronymic" class="form__label">Отчество:</label>
-                  <input type="text" class="form__input  form__input--text" id="patronymic">
+                  <input type="text" class="form__input  form__input--text" id="patronymic" placeholder="Отчество, если желаете">
                 </div>
               </div>
             </div>
@@ -119,18 +131,24 @@
             <div class="form__wrapper  wrapper  wrapper--width  wrapper--flex">
               <div class="form__wrapper  wrapper  wrapper--flex">
                 <h2 class="form__header  header  header--blue">Тел</h2>
-                <div class="form__wrapper  wrapper  wrapper--flex"></div>
+                <div class="form__wrapper  wrapper">
+                  <label for="phone" class="form__label  visually-hidden">Введите номер телефона</label>
+                  <input type="text" class="form__input  form__input--text" id="phone" placeholder="+7 ХХХ ХХ ХХ*">
+                </div>
               </div>
               <div class="form__wrapper  wrapper  wrapper--flex">
                 <h2 class="form__header  header  header--blue">E-mail</h2>
-                <div class="form__wrapper  wrapper  wrapper--flex"></div>
+                <div class="form__wrapper  wrapper">
+                  <label for="mail" class="form__label  visually-hidden">Введите e-mail</label>
+                  <input type="text" class="form__input  form__input--text" id="mail" placeholder="Ваш Email*">
+                </div>
               </div>
             </div>
           </fieldset>
           <fieldset class="form__fieldset  form__fieldset--add">
             <div class="form__wrapper  wrapper  wrapper--width  wrapper--flex">
               <h2 class="form__header  header  header--blue">Доп</h2>
-              <div class="form__wrapper  wrapper  wrapper--flex"></div>
+              <textarea name="addition" rows="8" cols="80" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </fieldset>
           <div class="form__wrapper  wrapper  wrapper--width  wrapper--flex">

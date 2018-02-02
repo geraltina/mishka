@@ -16,7 +16,18 @@
 }
 
 .product__facts {
+  position: relative;
   padding-bottom: 23px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 204px;
+    height: 1px;
+    background-color: @light-grey;
+  }
 }
 
 .product__header {
