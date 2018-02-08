@@ -96,7 +96,13 @@
 
   @media (min-width: @tablet-width) {
     &::before {
-      content: none;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 88px;
+      background-color: #ececec;
     }
 
     &--search::after {
