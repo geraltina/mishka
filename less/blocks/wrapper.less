@@ -6,6 +6,11 @@
   .margin();
   .padding();
   width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    .padding(50px, 50px)
+  }
 }
 
 .wrapper--flex {

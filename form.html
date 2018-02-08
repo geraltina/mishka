@@ -9,32 +9,39 @@
   <body class="page-body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="page-header__wrapper  wrapper  wrapper--width">
-          <a href="index.html" class="page-header__link">
-            <img class="page-header__logo  page-header__logo--closed" src="img/logo-mobile.svg" alt="Mishka">
-          </a>
-          <button class="page-header__menu-button  menu-button  menu-button--closed  menu-button--no-js">Закрыть</button>
-        </div>
-        <nav class="page-header__main-nav  main-nav  main-nav--closed  main-nav--no-js">
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link">Вязание на заказ</a>
-              </li>
-            </ul>
+        <button class="page-header__menu-button  menu-button  menu-button--closed  menu-button--no-js">Закрыть</button>
+        <nav class="page-header__main-nav  main-nav">
+          <div class="wrapper">
+            <a href="index.html" class="page-header__link">
+              <img class="page-header__logo  page-header__logo--closed" src="img/logo-mobile.svg" alt="Mishka">
+            </a>
           </div>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item  main-nav__item--search">
-                <a href="#" class="main-nav__link">Поиск по сайту</a>
-              </li>
-              <li class="main-nav__item  main-nav__item--cart">
-                <a href="#" class="main-nav__link">Корзина: пока пуста</a>
-              </li>
-            </ul>
+          <div class="page-header__menu  menu  menu--closed menu--no-js">
+            <div class="main-nav__wrapper--one">
+              <div class="main-nav__wrapper  main-nav__wrapper--three">
+                <ul class="main-nav__list">
+                  <li class="main-nav__item  main-nav__item--custom">
+                    <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
+                  </li>
+                  <li class="main-nav__item  main-nav__item--custom">
+                    <a class="main-nav__link">Вязание на заказ</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="main-nav__wrapper  main-nav__wrapper--four">
+                <p class="main-nav__text">Бесплатная доставка по России</p>
+              </div>
+            </div>
+            <div class="main-nav__wrapper  main-nav__wrapper--two">
+              <ul class="main-nav__list">
+                <li class="main-nav__item  main-nav__item--search">
+                  <a href="#" class="main-nav__link  main-nav__link--search">Поиск по сайту</a>
+                </li>
+                <li class="main-nav__item  main-nav__item--cart">
+                  <a href="#" class="main-nav__link">Корзина: пока пуста</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </div>
@@ -42,7 +49,7 @@
     <main class="page-main">
       <section class="promo">
         <div class="promo__wrapper  promo__wrapper--nobg  wrapper  wrapper--width">
-          <h1 class="promo__header">
+          <h1 class="promo__header  promo__header--no-bg">
             Вязание на заказ
           </h1>
         </div>
@@ -58,7 +65,7 @@
         <form action="https://echo.htmlacademy.ru" method="post" class="order__form  form">
           <fieldset class="form__fieldset  form__fieldset--type">
             <div class="form__wrapper  wrapper  wrapper--width  wrapper--flex">
-              <h2 class="form__header  header  header--blue">Тип</h2>
+              <h2 class="form__header  form__header--type  header  header--blue">Тип</h2>
               <div class="form__wrapper  wrapper  wrapper--flex">
                 <div class="form__wrapper  form__wrapper--radio  wrapper">
                   <input type="radio" class="form__input  form__input--radio" id="accessory" name="type" checked>
@@ -73,36 +80,36 @@
           </fieldset>
           <fieldset class="form__fieldset  form__fieldset--color">
             <div class="form__wrapper  wrapper  wrapper--width  wrapper--flex">
-              <h2 class="form__header  header  header--blue">Цвет</h2>
+              <h2 class="form__header  form__header--color  header  header--blue">Цвет</h2>
               <div class="form__wrapper  wrapper">
                 <div class="form__wrapper  form__wrapper--checks  wrapper wrapper--flex">
-                  <div class="form__wrapper form__wrapper--check">
+                  <div class="form__wrapper  form__wrapper--check">
                     <input type="checkbox" class="form__input form__input--check" name="white" id="white" checked>
-                    <label for="white" class="form__label">Белый</label>
+                    <label for="white" class="form__label  form__label--checkbox">Белый</label>
                   </div>
-                  <div class="form__wrapper form__wrapper--check">
-                    <input type="checkbox" class="form__input form__input--check" name="grey" id="grey" checked>
-                    <label for="grey" class="form__label">Серый</label>
+                  <div class="form__wrapper  form__wrapper--check">
+                    <input type="checkbox" class="form__input  form__input--check" name="grey" id="grey" checked>
+                    <label for="grey" class="form__label  form__label--checkbox">Серый</label>
                   </div>
                 </div>
                 <div class="form__wrapper  form__wrapper--checks  wrapper wrapper--flex">
-                  <div class="form__wrapper form__wrapper--check">
-                    <input type="checkbox" class="form__input form__input--check" name="white" id="white" checked>
-                    <label for="white" class="form__label">«Тиффани»</label>
+                  <div class="form__wrapper  form__wrapper--check">
+                    <input type="checkbox" class="form__input  form__input--check" name="tiffany" id="tiffany">
+                    <label for="tiffany" class="form__label  form__label--checkbox">«Тиффани»</label>
                   </div>
-                  <div class="form__wrapper form__wrapper--check">
-                    <input type="checkbox" class="form__input form__input--check" name="grey" id="grey" checked>
-                    <label for="grey" class="form__label">Черный</label>
+                  <div class="form__wrapper  form__wrapper--check">
+                    <input type="checkbox" class="form__input  form__input--check" name="black" id="black">
+                    <label for="black" class="form__label  form__label--checkbox">Черный</label>
                   </div>
                 </div>
                 <div class="form__wrapper  form__wrapper--checks  wrapper wrapper--flex">
-                  <div class="form__wrapper form__wrapper--check">
-                    <input type="checkbox" class="form__input form__input--check" name="white" id="white" checked>
-                    <label for="white" class="form__label">Розовый</label>
+                  <div class="form__wrapper  form__wrapper--check">
+                    <input type="checkbox" class="form__input  form__input--check" name="pink" id="pink">
+                    <label for="pink" class="form__label  form__label--checkbox">Розовый</label>
                   </div>
-                  <div class="form__wrapper form__wrapper--check">
-                    <input type="checkbox" class="form__input form__input--check" name="grey" id="grey" checked>
-                    <label for="grey" class="form__label">Оранжевый</label>
+                  <div class="form__wrapper  form__wrapper--check">
+                    <input type="checkbox" class="form__input form__input--check" name="orange" id="orange">
+                    <label for="orange" class="form__label  form__label--checkbox">Оранжевый</label>
                   </div>
                 </div>
               </div>
@@ -110,18 +117,18 @@
           </fieldset>
           <fieldset class="form__fieldset  form__fieldset--personal">
             <div class="form__wrapper  wrapper  wrapper--width  wrapper--flex">
-              <h2 class="form__header  header  header--blue">ФИО</h2>
+              <h2 class="form__header  form__header--personal  header  header--blue">ФИО</h2>
               <div class="form__wrapper  wrapper">
-                <div class="form__wrapper  wrapper  wrapper--flex">
-                  <label for="name" class="form__label">Имя:</label>
+                <div class="form__wrapper  form__wrapper--personal  wrapper  wrapper--flex">
+                  <label for="name" class="form__label  form__label--text">Имя:</label>
                   <input type="text" class="form__input  form__input--text" id="name" placeholder="Введите ваше имя*">
                 </div>
-                <div class="form__wrapper  wrapper  wrapper--flex">
-                  <label for="surname" class="form__label">Фамилия:</label>
+                <div class="form__wrapper  form__wrapper--personal  wrapper  wrapper--flex">
+                  <label for="surname" class="form__label  form__label--text">Фамилия:</label>
                   <input type="text" class="form__input  form__input--text" id="surname" placeholder="Укажите фамилию*">
                 </div>
-                <div class="form__wrapper  wrapper  wrapper--flex">
-                  <label for="patronymic" class="form__label">Отчество:</label>
+                <div class="form__wrapper  form__wrapper--personal  wrapper  wrapper--flex">
+                  <label for="patronymic" class="form__label  form__label--text">Отчество:</label>
                   <input type="text" class="form__input  form__input--text" id="patronymic" placeholder="Отчество, если желаете">
                 </div>
               </div>
@@ -129,17 +136,17 @@
           </fieldset>
           <fieldset class="form__fieldset  form__fieldset--contacts">
             <div class="form__wrapper  wrapper  wrapper--width  wrapper--flex">
-              <div class="form__wrapper  wrapper  wrapper--flex">
-                <h2 class="form__header  header  header--blue">Тел</h2>
-                <div class="form__wrapper  wrapper">
-                  <label for="phone" class="form__label  visually-hidden">Введите номер телефона</label>
+              <div class="form__wrapper  form__wrapper--contact  wrapper  wrapper--flex">
+                <h2 class="form__header  form__header--phone  form__header--contact  header  header--blue">Тел</h2>
+                <div class="form__wrapper  form__wrapper--phone  wrapper">
+                  <label for="phone" class="visually-hidden">Введите номер телефона</label>
                   <input type="text" class="form__input  form__input--text" id="phone" placeholder="+7 ХХХ ХХ ХХ*">
                 </div>
               </div>
-              <div class="form__wrapper  wrapper  wrapper--flex">
-                <h2 class="form__header  header  header--blue">E-mail</h2>
-                <div class="form__wrapper  wrapper">
-                  <label for="mail" class="form__label  visually-hidden">Введите e-mail</label>
+              <div class="form__wrapper  form__wrapper--contact  wrapper  wrapper--flex">
+                <h2 class="form__header  form__header--mail  form__header--contact  header  header--blue">E-mail</h2>
+                <div class="form__wrapper  form__wrapper--mail  wrapper">
+                  <label for="mail" class="visually-hidden">Введите e-mail</label>
                   <input type="text" class="form__input  form__input--text" id="mail" placeholder="Ваш Email*">
                 </div>
               </div>
@@ -147,11 +154,11 @@
           </fieldset>
           <fieldset class="form__fieldset  form__fieldset--add">
             <div class="form__wrapper  wrapper  wrapper--width  wrapper--flex">
-              <h2 class="form__header  header  header--blue">Доп</h2>
-              <textarea name="addition" rows="8" cols="80" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <h2 class="form__header  form__header--add  header  header--blue">Доп</h2>
+              <textarea class="form__textarea" name="addition" rows="8" cols="80" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </fieldset>
-          <div class="form__wrapper  wrapper  wrapper--width  wrapper--flex">
+          <div class="form__wrapper  form__wrapper--send  wrapper  wrapper--width  wrapper--flex">
             <p class="form__note">*Поля обязательны для заполнения</p>
             <button class="form__button  button" type="submit" name="submit">Отправить заказ</button>
           </div>
@@ -160,6 +167,9 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper  wrapper  wrapper--width">
+        <a class="page-footer__logo" href="index.html">
+          <img src="img/logo-footer.svg" alt="Mishka. Главная страница">
+        </a>
         <ul class="social-icons">
           <li class="social-icons__item">
             <a href="#" class="social-icons__link  social-icons__link--insta">Instagram</a>

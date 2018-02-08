@@ -13,6 +13,14 @@
     height: 1px;
     background-color: #e5e5e5;
   }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 5px;
+
+    &::after {
+      content: none;
+    }
+  }
 }
 
 .copyright__text {
@@ -23,6 +31,10 @@
   font-size: 19px;
   line-height: 19px;
   color: black;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 28px;
+  }
 }
 
 .copyright__link {

@@ -9,32 +9,39 @@
   <body class="page-body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="page-header__wrapper  wrapper  wrapper--width">
-          <a href="index.html" class="page-header__link">
-            <img class="page-header__logo  page-header__logo--closed" src="img/logo-mobile.svg" alt="Mishka">
-          </a>
-          <button class="page-header__menu-button  menu-button  menu-button--closed  menu-button--no-js">Закрыть</button>
-        </div>
-        <nav class="page-header__main-nav  main-nav  main-nav--closed  main-nav--no-js">
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link">Каталог товаров</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="form.html" class="main-nav__link">Вязание на заказ</a>
-              </li>
-            </ul>
+        <button class="page-header__menu-button  menu-button  menu-button--closed  menu-button--no-js">Закрыть</button>
+        <nav class="page-header__main-nav  main-nav">
+          <div class="wrapper">
+            <a href="index.html" class="page-header__link">
+              <img class="page-header__logo  page-header__logo--closed" src="img/logo-mobile.svg" alt="Mishka">
+            </a>
           </div>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item  main-nav__item--search">
-                <a href="#" class="main-nav__link">Поиск по сайту</a>
-              </li>
-              <li class="main-nav__item  main-nav__item--cart">
-                <a href="#" class="main-nav__link">Корзина: пока пуста</a>
-              </li>
-            </ul>
+          <div class="page-header__menu  menu  menu--closed menu--no-js">
+            <div class="main-nav__wrapper--one">
+              <div class="main-nav__wrapper  main-nav__wrapper--three">
+                <ul class="main-nav__list">
+                  <li class="main-nav__item  main-nav__item--custom">
+                    <a class="main-nav__link">Каталог товаров</a>
+                  </li>
+                  <li class="main-nav__item  main-nav__item--custom">
+                    <a href="form.html" class="main-nav__link">Вязание на заказ</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="main-nav__wrapper  main-nav__wrapper--four">
+                <p class="main-nav__text">Бесплатная доставка по России</p>
+              </div>
+            </div>
+            <div class="main-nav__wrapper  main-nav__wrapper--two">
+              <ul class="main-nav__list">
+                <li class="main-nav__item  main-nav__item--search">
+                  <a href="#" class="main-nav__link  main-nav__link--search">Поиск по сайту</a>
+                </li>
+                <li class="main-nav__item  main-nav__item--cart">
+                  <a href="#" class="main-nav__link">Корзина: пока пуста</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </div>
@@ -42,7 +49,7 @@
     <main class="page-main">
       <section class="promo">
         <div class="promo__wrapper  promo__wrapper--nobg  wrapper  wrapper--width">
-          <h1 class="promo__header">
+          <h1 class="promo__header  promo__header--no-bg">
             Каталог товаров
           </h1>
         </div>
@@ -110,7 +117,10 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page--ooter__wrapper  wrapper  wrapper--width">
+      <div class="page-footer__wrapper  wrapper  wrapper--width">
+        <a class="page-footer__logo" href="index.html">
+          <img src="img/logo-footer.svg" alt="Mishka. Главная страница">
+        </a>
         <ul class="social-icons">
           <li class="social-icons__item">
             <a href="#" class="social-icons__link  social-icons__link--insta">Instagram</a>

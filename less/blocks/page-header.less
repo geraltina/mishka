@@ -3,11 +3,28 @@
   display: flex;
   flex-direction: column;
   width: 320px;
+  padding-top: 79px;
   .margin();
+
+  @media (min-width: @tablet-width) {
+    padding-top: 88px;
+    width: 768px;
+    box-sizing: border-box;
+  }
 }
 
 .page-header__link {
-  align-self: center;
+  display: block;
+  width: 86px;
+  .margin();
   padding-top: 22px;
   padding-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    z-index: 100;
+    margin: 0;
+    width: 320px;
+    background-color: white;
+  }
 }
