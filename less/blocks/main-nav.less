@@ -96,6 +96,20 @@
 
   @media (min-width: @tablet-width) {
     &::before {
+      content: none;
+    }
+
+    &--search::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 88px;
+      background-color: #ececec;
+    }
+
+    &--cart::before {
       content: "";
       position: absolute;
       top: 0;
