@@ -11,6 +11,12 @@
   }
 }
 
+.promo--form {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 73px;
+  }
+}
+
 .promo__wrapper {
   max-width: 578px;
   .margin();
@@ -26,6 +32,12 @@
     padding-bottom: 372px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: 50% 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 153px;
+    padding-bottom: 359px;
+    background-image: url("../img/hero-desktop@1x.jpg");
   }
 }
 
@@ -61,5 +73,11 @@
     width: 497px;
     font-size: 43px;
     line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 613px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }

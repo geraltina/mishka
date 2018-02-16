@@ -11,6 +11,38 @@
   &--add {
     margin-bottom: 17px;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 63px;
+
+    &--color {
+      padding-top: 56px;
+      padding-bottom: 49px;
+      background-color: @grey;
+    }
+
+    &--personal {
+      padding-top: 3px;
+      margin-bottom: 50px;
+    }
+
+    &--contacts {
+      padding-top: 65px;
+      padding-bottom: 47px;
+      margin-bottom: 51px;
+      background-color: @grey;
+    }
+
+    &--add {
+      margin-bottom: 52px;
+    }
+  }
+}
+
+.form__fieldset .form__wrapper--common {
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .form__wrapper {
@@ -58,6 +90,31 @@
   &--send {
     margin-bottom: 54px;
   }
+
+  @media (min-width: @tablet-width) {
+    &--radio {
+      margin-bottom: 52px;
+    }
+
+    &--checks {
+      flex-direction: row;
+    }
+
+    &--check {
+      margin-bottom: 14px;
+    }
+
+    &--contact {
+      justify-content: space-between;
+      margin-bottom: 39px;
+    }
+
+    &--send {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+  }
 }
 
 .form__wrapper--phone {
@@ -74,6 +131,15 @@
     background-repeat: no-repeat;
     opacity: 0.2;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 500px;
+
+    &::after {
+      top: -4px;
+      right: 24px;
+    }
+  }
 }
 
 .form__wrapper--mail {
@@ -89,6 +155,30 @@
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
     opacity: 0.2;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 500px;
+
+    &::after {
+      top: -5px;
+      right: 21px;
+    }
+  }
+}
+
+.form__wrapper--big-personal {
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+  }
+}
+
+.form__wrapper--personal {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 39px;
+    width: 499px;
   }
 }
 
@@ -114,6 +204,27 @@
   &--contact {
     margin-bottom: 12px;
   }
+
+  @media (min-width: @tablet-width) {
+    &--type {
+      margin-right: 132px;
+      margin-top: 4px;
+    }
+
+    &--color {
+      margin-right: 124px;
+      margin-top: 13px;
+    }
+
+    &--add {
+      margin-top: 16px;
+      margin-right: 129px;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
 }
 
 .form__label {
@@ -133,6 +244,39 @@
     padding-left: 65px;
     padding-top: 12px;
   }
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
+
+    &--radio {
+      padding-left: 80px;
+      padding-top: 0;
+    }
+
+    &--checkbox {
+      padding-left: 81px;
+    }
+
+    &--text {
+      margin-right: 24px;
+    }
+  }
+}
+
+.form__label--check {
+  @media (min-width: @tablet-width) {
+    &-first {
+      margin-right: 116px;
+    }
+
+    &-second {
+      margin-right: 67px;
+    }
+
+    &-third {
+      margin-right: 93px;
+    }
+  }
 }
 
 // radio buttons stylesheet
@@ -151,6 +295,12 @@
   border: 2px solid @base-color;
   border-radius: 50%;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    top: -15px;
+    width: 47px;
+    height: 47px;
+  }
 }
 
 .form__input--radio:checked + .form__label::before {
@@ -164,6 +314,14 @@
   box-shadow: 0 0 0 10px white, 0 0 0 12px @base-color;
   border: 0;
   transition: background-color 0.2s ease-in-out;
+
+  @media (min-width: @tablet-width) {
+    top: 1px;
+    left: 16px;
+    width: 21px;
+    height: 21px;
+    box-shadow: 0 0 0 14px white, 0 0 0 16px @base-color;
+  }
 }
 
 // checkbox button stylesheet
@@ -178,9 +336,15 @@
   left: 0;
   width: 37px;
   height: 35px;
-  background-color: white;
+  background-color: transparent;
   border: 2px solid @base-color;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    top: -4px;
+    width: 50px;
+    height: 48px;
+  }
 }
 
 .form__input--check:checked + .form__label::before {
@@ -190,12 +354,19 @@
   left: 0;
   width: 37px;
   height: 35px;
-  background-color: white;
+  background-color: transparent;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 23px;
   border: 2px solid @base-color;
+
+  @media (min-width: @tablet-width) {
+    top: -4px;
+    width: 50px;
+    height: 48px;
+    background-size: 31px;
+  }
 }
 
 // text inputs stylesheet
@@ -207,9 +378,10 @@
   padding-top: 16px;
   padding-bottom: 15px;
   width: 100%;
-  background-color: white;
+  background-color: transparent;
   border: 0;
   border-bottom: 2px solid black;
+  box-sizing: border-box;
 
   &::-webkit-input-placeholder {
     font-size: 17px;
@@ -241,6 +413,43 @@
     font-family: "Open Sans", "Arial", sans-serif;
     color: @base-color;
     opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: -11px;
+    padding-left: 17px;
+
+    &::-webkit-input-placeholder {
+      font-size: 19px;
+      line-height: 20px;
+      font-family: "Open Sans", "Arial", sans-serif;
+      color: @base-color;
+      opacity: 0.3;
+    }
+
+    &::-moz-placeholder {
+      font-size: 19px;
+      line-height: 20px;
+      font-family: "Open Sans", "Arial", sans-serif;
+      color: @base-color;
+      opacity: 0.3;
+    }
+
+    &:-moz-placeholder {
+      font-size: 19px;
+      line-height: 20px;
+      font-family: "Open Sans", "Arial", sans-serif;
+      color: @base-color;
+      opacity: 0.3;
+    }
+
+    &:-ms-input-placeholder {
+      font-size: 19px;
+      line-height: 20px;
+      font-family: "Open Sans", "Arial", sans-serif;
+      color: @base-color;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -284,6 +493,48 @@
     color: @base-color;
     opacity: 0.3;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 560px;
+
+    &::-webkit-input-placeholder {
+      font-size: 19px;
+      line-height: 20px;
+      font-family: "Open Sans", "Arial", sans-serif;
+      color: @base-color;
+      opacity: 0.3;
+    }
+
+    &::-moz-placeholder {
+      font-size: 19px;
+      line-height: 20px;
+      font-family: "Open Sans", "Arial", sans-serif;
+      color: @base-color;
+      opacity: 0.3;
+    }
+
+    &:-moz-placeholder {
+      font-size: 19px;
+      line-height: 20px;
+      font-family: "Open Sans", "Arial", sans-serif;
+      color: @base-color;
+      opacity: 0.3;
+    }
+
+    &:-ms-input-placeholder {
+      font-size: 19px;
+      line-height: 20px;
+      font-family: "Open Sans", "Arial", sans-serif;
+      color: @base-color;
+      opacity: 0.3;
+    }
+  }
+}
+
+.form__button {
+  @media (min-width: @tablet-width) {
+    width: 231px;
+  }
 }
 
 .form__note {
@@ -291,4 +542,12 @@
   margin-bottom: 31px;
   font-size: 14px;
   line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    margin-bottom: 0;
+    padding-top: 17px;
+    font-size: 17px;
+    line-height: 17px;
+  }
 }

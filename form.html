@@ -18,19 +18,14 @@
           </div>
           <div class="page-header__menu  menu  menu--closed menu--no-js">
             <div class="main-nav__wrapper--one">
-              <div class="main-nav__wrapper  main-nav__wrapper--three">
-                <ul class="main-nav__list">
-                  <li class="main-nav__item  main-nav__item--custom">
-                    <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
-                  </li>
-                  <li class="main-nav__item  main-nav__item--custom">
-                    <a class="main-nav__link">Вязание на заказ</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="main-nav__wrapper  main-nav__wrapper--four">
-                <p class="main-nav__text">Бесплатная доставка по России</p>
-              </div>
+              <ul class="main-nav__list">
+                <li class="main-nav__item  main-nav__item--custom">
+                  <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
+                </li>
+                <li class="main-nav__item  main-nav__item--custom">
+                  <a class="main-nav__link">Вязание на заказ</a>
+                </li>
+              </ul>
             </div>
             <div class="main-nav__wrapper  main-nav__wrapper--two">
               <ul class="main-nav__list">
@@ -42,12 +37,25 @@
                 </li>
               </ul>
             </div>
+            <div class="main-nav__wrapper  main-nav__wrapper--three">
+              <p class="main-nav__text">Бесплатная доставка по России</p>
+            </div>
+            <div class="main-nav__wrapper  main-nav__wrapper--four">
+              <ul class="main-nav__list">
+                <li class="main-nav__item  main-nav__item--small">
+                  <a href="#" class="main-nav__link">Новые поступления</a>
+                </li>
+                <li class="main-nav__item  main-nav__item--small">
+                  <a href="#" class="main-nav__link">Распродажа</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </div>
     </header>
     <main class="page-main">
-      <section class="promo  promo--zigzag">
+      <section class="promo  promo--zigzag  promo--form">
         <div class="promo__wrapper  promo__wrapper--nobg  wrapper  wrapper--width">
           <h1 class="promo__header  promo__header--no-bg">
             Вязание на заказ
@@ -64,7 +72,7 @@
         </div>
         <form action="https://echo.htmlacademy.ru" method="post" class="order__form  form">
           <fieldset class="form__fieldset  form__fieldset--type">
-            <div class="form__wrapper  wrapper  wrapper--width  wrapper--flex">
+            <div class="form__wrapper  form__wrapper--common  wrapper  wrapper--width  wrapper--flex">
               <h2 class="form__header  form__header--type  header  header--blue">Тип</h2>
               <div class="form__wrapper  wrapper  wrapper--flex">
                 <div class="form__wrapper  form__wrapper--radio  wrapper">
@@ -79,13 +87,13 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset  form__fieldset--color">
-            <div class="form__wrapper  wrapper  wrapper--width  wrapper--flex">
+            <div class="form__wrapper  form__wrapper--common  wrapper  wrapper--width  wrapper--flex">
               <h2 class="form__header  form__header--color  header  header--blue">Цвет</h2>
               <div class="form__wrapper  wrapper">
                 <div class="form__wrapper  form__wrapper--checks  wrapper wrapper--flex">
                   <div class="form__wrapper  form__wrapper--check">
                     <input type="checkbox" class="form__input form__input--check" name="white" id="white" checked>
-                    <label for="white" class="form__label  form__label--checkbox">Белый</label>
+                    <label for="white" class="form__label  form__label--checkbox  form__label--check-first">Белый</label>
                   </div>
                   <div class="form__wrapper  form__wrapper--check">
                     <input type="checkbox" class="form__input  form__input--check" name="grey" id="grey" checked>
@@ -95,7 +103,7 @@
                 <div class="form__wrapper  form__wrapper--checks  wrapper wrapper--flex">
                   <div class="form__wrapper  form__wrapper--check">
                     <input type="checkbox" class="form__input  form__input--check" name="tiffany" id="tiffany">
-                    <label for="tiffany" class="form__label  form__label--checkbox">«Тиффани»</label>
+                    <label for="tiffany" class="form__label  form__label--checkbox  form__label--check-second">«Тиффани»</label>
                   </div>
                   <div class="form__wrapper  form__wrapper--check">
                     <input type="checkbox" class="form__input  form__input--check" name="black" id="black">
@@ -105,7 +113,7 @@
                 <div class="form__wrapper  form__wrapper--checks  wrapper wrapper--flex">
                   <div class="form__wrapper  form__wrapper--check">
                     <input type="checkbox" class="form__input  form__input--check" name="pink" id="pink">
-                    <label for="pink" class="form__label  form__label--checkbox">Розовый</label>
+                    <label for="pink" class="form__label  form__label--checkbox  form__label--check-third">Розовый</label>
                   </div>
                   <div class="form__wrapper  form__wrapper--check">
                     <input type="checkbox" class="form__input form__input--check" name="orange" id="orange">
@@ -116,7 +124,7 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset  form__fieldset--personal">
-            <div class="form__wrapper  wrapper  wrapper--width  wrapper--flex">
+            <div class="form__wrapper  form__wrapper--common  form__wrapper--big-personal  wrapper  wrapper--width  wrapper--flex">
               <h2 class="form__header  form__header--personal  header  header--blue">ФИО</h2>
               <div class="form__wrapper  wrapper">
                 <div class="form__wrapper  form__wrapper--personal  wrapper  wrapper--flex">
@@ -136,14 +144,14 @@
           </fieldset>
           <fieldset class="form__fieldset  form__fieldset--contacts">
             <div class="form__wrapper  wrapper  wrapper--width  wrapper--flex">
-              <div class="form__wrapper  form__wrapper--contact  wrapper  wrapper--flex">
+              <div class="form__wrapper  form__wrapper--common  form__wrapper--contact  wrapper  wrapper--flex">
                 <h2 class="form__header  form__header--phone  form__header--contact  header  header--blue">Тел</h2>
                 <div class="form__wrapper  form__wrapper--phone  wrapper">
                   <label for="phone" class="visually-hidden">Введите номер телефона</label>
                   <input type="text" class="form__input  form__input--text" id="phone" placeholder="+7 ХХХ ХХ ХХ*">
                 </div>
               </div>
-              <div class="form__wrapper  form__wrapper--contact  wrapper  wrapper--flex">
+              <div class="form__wrapper  form__wrapper--common  form__wrapper--contact  wrapper  wrapper--flex">
                 <h2 class="form__header  form__header--mail  form__header--contact  header  header--blue">E-mail</h2>
                 <div class="form__wrapper  form__wrapper--mail  wrapper">
                   <label for="mail" class="visually-hidden">Введите e-mail</label>
@@ -153,7 +161,7 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset  form__fieldset--add">
-            <div class="form__wrapper  wrapper  wrapper--width  wrapper--flex">
+            <div class="form__wrapper  form__wrapper--common  wrapper  wrapper--width  wrapper--flex">
               <h2 class="form__header  form__header--add  header  header--blue">Доп</h2>
               <textarea class="form__textarea" name="addition" rows="8" cols="80" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
