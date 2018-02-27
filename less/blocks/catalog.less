@@ -10,9 +10,16 @@
       left: 0;
       width: 100%;
       height: 22px;
-      background-image: url(../img/bg-zigzag-fill-tablet.svg);
+      background-image: url("../img/bg-zigzag-fill-tablet.svg");
       background-repeat: repeat-x;
       background-position-x: 22px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position-x: 10px;
     }
   }
 }
@@ -27,6 +34,10 @@
     display: flex;
     width: 668px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+  }
 }
 
 .catalog__item {
@@ -40,6 +51,10 @@
 
   @media (min-width: @tablet-width) {
     width: 334px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 525px;
   }
 }
 
@@ -60,19 +75,11 @@
   &--interior {
     background-image: url("../img/icon-interior.svg");
     background-position: 243px 23px;
-
-    @media (min-width: @tablet-width) {
-      background-position: 251px 30px;
-    }
   }
 
   &--toys {
     background-image: url("../img/icon-toy.svg");
     background-position: 233px 20px;
-
-    @media (min-width: @tablet-width) {
-      background-position: 235px 31px;
-    }
   }
 
   @media (min-width: @tablet-width) {
@@ -80,6 +87,28 @@
     padding-bottom: 42px;
     font-size: 20px;
     line-height: 28px;
+
+    &--interior {
+      background-position: 251px 30px;
+    }
+
+    &--toys {
+      background-position: 235px 31px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 525px;
+    padding-left: 38px;
+    padding-bottom: 38px;
+
+    &--interior {
+      background-position: 450px 30px;
+    }
+
+    &--toys {
+      background-position: 431px 31px;
+    }
   }
 }
 

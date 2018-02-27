@@ -37,7 +37,7 @@
 
     &--three {
       position: absolute;
-      top: 116px;
+      top: 106px;
       right: 48px;
       display: block;
       width: 231px;
@@ -101,17 +101,6 @@
     background-color: @light-grey;
   }
 
-  &--search::after {
-    content: "";
-    position: absolute;
-    top: 31px;
-    left: 30px;
-    width: 18px;
-    height: 18px;
-    background-image: url("../img/icon-search.svg");
-    background-repeat: no-repeat;
-  }
-
   &--cart::after {
     content: "";
     position: absolute;
@@ -146,11 +135,6 @@
       width: 1px;
       height: 88px;
       background-color: @light-grey;
-    }
-
-    &--search::after {
-      top: 36px;
-      left: 34px;
     }
 
     &--cart::after {
@@ -224,12 +208,28 @@
 }
 
 .main-nav__link--search {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 31px;
+    left: 30px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/icon-search.svg");
+    background-repeat: no-repeat;
+  }
+
   @media (min-width: @tablet-width) {
     display: block;
     padding-top: 88px;
     width: 83px;
     height: 0;
     overflow: hidden;
+
+    &::after {
+      top: 36px;
+      left: 34px;
+    }
   }
 }
 

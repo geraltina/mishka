@@ -8,6 +8,12 @@
     background-image: url("../img/bg-zigzag-tablet.svg");
     background-position: 0 523px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 55px;
+    background-image: url("../img/bg-zigzag-desktop.svg");
+    background-position: 43px 523px;
+  }
 }
 
 .feedback__wrapper {
@@ -18,6 +24,12 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 72px;
+    padding-left: 175px;
+    width: 1050px;
   }
 }
 
@@ -36,5 +48,9 @@
     top: 79px;
     right: 50px;
     width: 174px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 0;
   }
 }

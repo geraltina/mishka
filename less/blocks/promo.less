@@ -9,11 +9,21 @@
     background-repeat: repeat-x;
     background-position: 22px 213px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 129px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-position: 42px 235px;
+  }
 }
 
 .promo--form {
   @media (min-width: @tablet-width) {
     margin-bottom: 73px;
+  }
+  
+  @media (min-width: @desktop-width) {
+    margin-bottom: 122px;
   }
 }
 
@@ -35,8 +45,9 @@
   }
 
   @media (min-width: @desktop-width) {
+    max-width: 100%;
     padding-top: 153px;
-    padding-bottom: 359px;
+    padding-bottom: 360px;
     background-image: url("../img/hero-desktop@1x.jpg");
   }
 }
@@ -48,6 +59,11 @@
   @media (min-width: @tablet-width) {
     padding-top: 96px;
     padding-bottom: 79px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 93px;
+    padding-bottom: 103px;
   }
 }
 
