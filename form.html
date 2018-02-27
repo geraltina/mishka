@@ -13,7 +13,11 @@
         <nav class="page-header__main-nav  main-nav">
           <div class="wrapper">
             <a href="index.html" class="page-header__link">
-              <img class="page-header__logo  page-header__logo--closed" src="img/logo-mobile.svg" alt="Mishka">
+              <picture>
+                <source media="(min-width: 1050px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="page-header__logo  page-header__logo--closed" src="img/logo-mobile.svg" alt="Mishka">
+              </picture>
             </a>
           </div>
           <div class="page-header__menu  menu  menu--closed menu--no-js">

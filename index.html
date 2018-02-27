@@ -13,7 +13,11 @@
         <nav class="page-header__main-nav  main-nav">
           <div class="wrapper">
             <a class="page-header__link">
-              <img class="page-header__logo  page-header__logo--closed" src="img/logo-mobile.svg" alt="Mishka">
+              <picture>
+                <source media="(min-width: 1050px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="page-header__logo  page-header__logo--closed" src="img/logo-mobile.svg" alt="Mishka">
+              </picture>
             </a>
           </div>
           <div class="page-header__menu  menu  menu--closed menu--no-js">
@@ -106,7 +110,15 @@
                   </tr>
                 </table>
               </div>
-              <img src="img/triple-set-mobile@1x.jpg" class="week-product__image" alt="Три вязаные корзинки для декора">
+              <picture class="photos__pictures  photos__pictures--panorama">
+                <source type="image/webp" media="(min-width: 1050px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1050px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@1x.jpg 1x, img/triple-set-mobile@2x.jpg 2x" alt="Три вязаные корзинки для декора">
+              </picture>
             </section>
             <section class="week-product__book">
               <h2 class="visually-hidden">Секция цены и заказа</h2>
@@ -203,7 +215,17 @@
               </tbody>
             </table>
           </div>
-          <img class="contacts__map" src="img/map.jpg" alt="Наше местоположение на карте" width="320" height="457">
+          <div class="contacts__wrapper contacts__wrapper--map">
+            <picture>
+              <source type="image/webp" media="(min-width: 1050px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1050px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x" alt="Наше местоположение на карте">
+            </picture>
+          </div>
         </div>
         <div class="contacts__wrapper  wrapper  wrapper--width">
           <button class="contacts__button  button" type="button" name="button">Напишите нам</button>
