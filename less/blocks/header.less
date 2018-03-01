@@ -1,0 +1,31 @@
+.header {
+  font-weight: bold;
+  color: black;
+}
+
+.header--big {
+  font-size: 25px;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 52px;
+    line-height: 52px;
+  }
+}
+
+.header--small {
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.header--blue {
+  font-size: 17px;
+  line-height: 17px;
+  color: @light-blue;
+  text-transform: uppercase;
+}

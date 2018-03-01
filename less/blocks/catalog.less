@@ -1,0 +1,118 @@
+.catalog {
+  position: relative;
+  background-color: #f9f9f9;
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 22px;
+      background-image: url("../img/bg-zigzag-fill-tablet.svg");
+      background-repeat: repeat-x;
+      background-position-x: 22px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position-x: 10px;
+    }
+  }
+}
+
+.catalog__list {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+  .margin();
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 668px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+  }
+}
+
+.catalog__item {
+  &:nth-child(1) {
+    background-color: @light-blue;
+  }
+
+  &:nth-child(2) {
+    background-color: #56c3b2;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 334px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 525px;
+  }
+}
+
+.catalog__link {
+  display: block;
+  .margin();
+  padding-top: 25px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  width: 320px;
+  font-weight: bold;
+  font-size: 19px;
+  background-repeat: no-repeat;
+  color: white;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  &--interior {
+    background-image: url("../img/icon-interior.svg");
+    background-position: 243px 23px;
+  }
+
+  &--toys {
+    background-image: url("../img/icon-toy.svg");
+    background-position: 233px 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 42px;
+    font-size: 20px;
+    line-height: 28px;
+
+    &--interior {
+      background-position: 251px 30px;
+    }
+
+    &--toys {
+      background-position: 235px 31px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 525px;
+    padding-left: 38px;
+    padding-bottom: 38px;
+
+    &--interior {
+      background-position: 450px 30px;
+    }
+
+    &--toys {
+      background-position: 431px 31px;
+    }
+  }
+}
+
+.catalog__wrapper {
+  display: block;
+  width: 130px;
+}

@@ -1,0 +1,22 @@
+.product-table {
+  margin-bottom: 29px;
+  width: 260px;
+  border-collapse: collapse;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 91px;
+  }
+}
+
+.product-table__row {
+  border-bottom: 1px solid @light-grey;
+}
+
+.product-table__column {
+  padding-top: 7px;
+  padding-bottom: 8px;
+
+  &:first-child {
+    width: 96px;
+  }
+}

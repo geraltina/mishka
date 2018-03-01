@@ -1,0 +1,62 @@
+.feedback {
+  padding-bottom: 50px;
+  background-image: url("../img/bg-zigzag-mobile.svg");
+  background-repeat: repeat-x;
+  background-position: 0 622px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/bg-zigzag-tablet.svg");
+    background-position: 0 523px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 55px;
+    background-image: url("../img/bg-zigzag-desktop.svg");
+    background-position: 43px 523px;
+  }
+}
+
+.feedback__wrapper {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    padding-top: 80px;
+    min-height: 456px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 350px auto;
+    
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 72px;
+    padding-left: 175px;
+    width: 1050px;
+  }
+}
+
+.feedback__header {
+  margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-bottom: 53px;
+  }
+}
+
+.feedback__button {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 79px;
+    right: 50px;
+    width: 174px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 0;
+  }
+}

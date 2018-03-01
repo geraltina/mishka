@@ -1,0 +1,23 @@
+.wrapper {
+  box-sizing: border-box;
+}
+
+.wrapper--width {
+  .margin();
+  .padding();
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    .padding(50px, 50px)
+  }
+  
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+  }
+}
+
+.wrapper--flex {
+  display: flex;
+  flex-direction: column;
+}

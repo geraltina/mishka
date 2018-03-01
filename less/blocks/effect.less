@@ -1,0 +1,134 @@
+.effect {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+  }
+}
+
+.effect__wrapper {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    padding-top: 96px;
+    padding-bottom: 125px;
+    padding-right: 15px;
+    padding-left: 309px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: 0;
+    box-sizing: border-box;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 238px;
+      height: 276px;
+      background-image: url("../img/icon-editor-diagram-fill-small.svg"), url("../img/icon-timer-small.svg");
+      background-position: 18px 55px, 0 0;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "24";
+      position: absolute;
+      top: 135px;
+      left: 65px;
+      width: 106px;
+      height: 70px;
+      font-weight: bold;
+      font-size: 96px;
+      line-height: 149.47px;
+      font-family: "Open Sans", "Arial", sans-serif;
+      color: @pink-color;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    padding-top: 155px;
+    padding-bottom: 115px;
+    padding-left: 376px;
+    padding-right: 10px;
+
+    &::before {
+      top: 64px;
+      left: 12px;
+      width: 298px;
+      height: 346px;
+      background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+      background-position: 20px 70px, 0 0;
+    }
+
+    &::after {
+      top: 160px;
+      left: 90px;
+      width: 131px;
+      height: 87px;
+      font-size: 120px;
+      line-height: 186.84px;
+    }
+  }
+}
+
+.effect__header {
+  width: 168px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: black;
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+  }
+}
+
+.effect__header br {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.effect__text {
+  margin-top: 10px;
+  margin-bottom: 8px;
+
+  @media (min-width: @desktop-width) {
+    width: 522px;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.effect__link {
+  color: @pink-color;
+
+  &:hover {
+    color: rgba(210, 40, 86, 0.6);
+    text-decoration: none;
+  }
+
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 22px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
